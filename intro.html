@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF=8">
+<meta name="viewport" content='width=device-width, intial-scale=1.0'>
+<title> 프론트엔드 대면 자기소개</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Jua&family=Noto+Sans+KR:wght@100..900&display=swap');
+    
+    *{margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      }
+      
+        body {
+        background: rgb(255, 255, 211);}
+        
+        li {
+        list-style: none;}
+      
+        a {
+        text-decoration: none;
+        color: black;}
+      
+        .con {
+          height: 100vh;
+          display: flex;
+          color: black;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+           }
+           .menu ul i{
+            margin-top: 10px;
+            margin-left: 10px;
+            transform: rotate(-25deg)
+           }
+          header {
+          font-family: "Jua", serif;
+          margin-top: 30px;
+          font-size: 25px;
+          padding: 10px 30px;
+          color: black;
+          position: fixed;
+          }
+
+          header nav ul {
+            display: flex; 
+          }
+
+          header nav ul li {
+            margin-left: 50px;
+            font-weight: bold;}
+
+          #about {
+          display: flex;
+          justify-content: center;
+          align-items: center;}
+          
+          .about-picture {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 80px;}
+
+          .about-picture img {
+          width: 300px;
+          height: auto;
+          border-radius: 50%;}
+
+          .about-word {
+            text-align: left;
+            margin-left: 40px;
+        }
+        .about-word h2::before{
+         content: "😍";
+         margin-right: 10px;
+        }
+
+        .about-word p{
+        font-family: "Dongle", serif;
+        font-size: 30px;
+        }
+
+        #experience {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 25px;
+            font-family: "Dongle", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: black}
+
+        .experience-word h2{
+            margin-top: 20px;
+            padding-right: 20px;
+          }
+
+          .experience-word p{
+            margin-top: 20px;
+          }
+          .experience-picture {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          }
+
+          .experience-picture img {
+          width: 400px;
+          height: auto;
+          border-radius: 25px;}
+
+          .experience-word {
+    
+            border-radius: 25px;
+            margin-top: 30px;
+            text-align: center;
+          }
+
+          #hobbies{
+            font-size: 25px;
+            font-family: "Dongle", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: black
+            ;
+          }
+          .hobbies-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;}
+
+            .hobbies-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;}
+
+            .hobbies-picture,.hobbies-picture1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;}
+
+          .hobiess-picture {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          }
+
+          .hobbies-picture img {
+          width: 300px;
+          height: auto;
+          border-radius: 25px;}
+
+          .hobiess-picture1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          }
+
+          .hobbies-picture1 img {
+          width: 300px;
+          height: auto;
+          border-radius: 25px;}
+          
+          .hobbies-word h2{
+            margin-top: 30px;
+            padding-right: 20px; 
+          }
+
+          .hobbies-word1 h2{
+            margin-top: 30px;
+            padding-right: 20px; 
+          }
+
+          .plan-picture {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          }
+
+          .plan-picture img {
+          width: 300px;
+          height: auto;
+          border-radius: 25px;}
+
+          .plan-word {
+            border: 3px solid black;
+            border-radius: 25px;
+            margin-top: 30px;
+            text-align: center;
+          }
+
+          .plan-word2 {
+            margin-top: 10px;
+            text-align: center;
+          }
+          .plan-word2 li::before{
+            content: "✔";
+            margin-right: 10px;
+            padding-top: 40px;
+
+          }
+          #plan{
+            font-size: 25px;
+            font-family: "Dongle", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: black
+            ;
+          }
+
+          
+      
+      
+  </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+  <body>
+  <div id="container">
+      <header id="header">
+        <nav class="menu">
+          <ul>
+            <li><a href="#about"><b>About</b></a></li>
+            <li><a href="#experience"><b>Experience</b></a></li>
+            <li><a href="#hobbies"><b>Hobbies</b></a></li>
+            <li><a href="#plan"><b>Plan</b></a></li>
+            <i class="fa-solid fa-arrow-pointer"></i>
+          </ul>
+        </nav>
+      </header>
+
+    <div id="about" class="con">
+      <div class="about-wrapper">
+
+          <div class="about-picture">
+          <img src="images/자기소개 사진.JPG" alt="내사진">
+          <div>
+      
+          <div class="about-word">
+            <h2>최희승</h2>
+            <br>
+            <p> 전공: 관광경영학과</p>
+            <p> MBTI: ISFP</p>
+            <p> 경력: 보안업체 기술영업</p>
+            <p> </p>
+          </div>
+         
+    </div> 
+        </div>
+      </div> 
+    </div>
+
+      <div id="experience" class="con">
+        <div class="experience-wrapper">         
+            <div class="experience-picture">
+            <img src="images/중국.jpg" alt="중국국">
+            </div>
+            
+            <div class="experience-word">
+                <h2>🧳"좋았던 경험"</h2>
+            <p> 좋았던 경혐은 1학기 동안 중국에서 교환학생 했던
+                기억인 것 같아요. <br>
+                항상 있던 한국이 아닌 새로운 환경으로 가서
+                매일이 새롭게 재미있었어요.<br>
+                유레카에서도 모두와 함께 공부해서 새롭고 즐겁게
+                공부하고 싶습니다!!!
+            </p>
+            </div>
+           
+      </div>  
+        </div>
+      </div> 
+    </div> 
+
+        <div id="hobbies" class="con">
+            <div class="hobbies-wrapper">
+                <div class="hobbies-row">
+                  <div class="hobbies-picture">
+                    <img src="images/테니스.JPG" alt="테니스">
+                    
+                    <div class="hobbies-word">
+                      <h2>🎾" 테니스 치기 "</h2>
+                      <p>저의 취미는 테니스 치기입니다!<br>
+                        아직 배운지 3개월 밖에 되지 않았지만<br>
+                        꾸준히 배워서 마스터 하고 싶어요~
+                      </p>
+                    </div>
+                    
+                  </div>
+                  <div class="hobbies-picture1">
+                    <img src="images/블로그 작성.jpg" alt="블로그 작성">
+                    <div class="hobbies-word1">
+                        <h2>🥘"맛집 블로그 작성하기"</h2>
+                      <p>음식은 항상 옳다~<br>
+                        여행도, 맛있는 것 먹는 것도 너무 좋아한답니다<br>
+                        소소하게 맛집 블로그를 취미로 하고 있어요!!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div id="plan" class="con">
+            <div class="plan-wrapper">
+              <div class="plan-picture">
+                <img src="images/계획.jpg" alt="앞으로의 계획">
+              </div>
+                <div class="plan-word">
+                  <ul>
+                    <li>비전공자의 프론트 개발자 취직 도전!!!</li>
+                   
+                  </ul>
+                </div>
+
+                <div class="plan-word2">
+                  <ul>
+                    <li>올해 취업 성공하기</li>
+                    <li>정보처리기사 자격증 따기</li>
+                  </ul>
+                </div>
+               
+          </div> 
+            </div>
+            
+  </div>
+  </body>
+</html>
